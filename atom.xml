@@ -1,4 +1,70 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="Life Is Like Riding a Bicycle. To Keep Your Balance You Must Keep Moving."><title>使用 Github 和 Hexo 快速搭建个人博客 | Li Kehui</title><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css"><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">使用 Github 和 Hexo 快速搭建个人博客</h1><a id="logo" href="/.">Li Kehui</a><p class="description">Good good study, day day up!</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">使用 Github 和 Hexo 快速搭建个人博客</h1><div class="post-meta">Mar 9, 2017<span> | </span><span class="category"><a href="/categories/How-To/">How To</a><a href="/categories/How-To/Hexo/">Hexo</a></span><script src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span></div><a data-thread-key="2017/03/09/使用 Github 和 Hexo 快速搭建个人博客/" href="/2017/03/09/使用 Github 和 Hexo 快速搭建个人博客/#comments" class="ds-thread-count"></a><div class="clear"><div id="toc" class="toc-article"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备"><span class="toc-number">1.</span> <span class="toc-text">准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#注册-Github-账号"><span class="toc-number">2.</span> <span class="toc-text">注册 Github 账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-git，node-js-和-Hexo"><span class="toc-number">3.</span> <span class="toc-text">安装 git，node.js 和 Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建博客"><span class="toc-number">4.</span> <span class="toc-text">搭建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#本地初始化博客"><span class="toc-number">4.1.</span> <span class="toc-text">本地初始化博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#根据需要配置博客"><span class="toc-number">4.2.</span> <span class="toc-text">根据需要配置博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署博客"><span class="toc-number">4.3.</span> <span class="toc-text">部署博客</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#维护博客的一些常用操作"><span class="toc-number">4.4.</span> <span class="toc-text">维护博客的一些常用操作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#发布一篇博文"><span class="toc-number">4.4.1.</span> <span class="toc-text">发布一篇博文</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#删除一篇博文"><span class="toc-number">4.4.2.</span> <span class="toc-text">删除一篇博文</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#博文首页展示长度控制"><span class="toc-number">4.4.3.</span> <span class="toc-text">博文首页展示长度控制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo-中的-front-matter-配置"><span class="toc-number">4.4.4.</span> <span class="toc-text">Hexo 中的 front-matter 配置</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#（可选）选择自己喜欢的主题"><span class="toc-number">4.5.</span> <span class="toc-text">（可选）选择自己喜欢的主题</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Maupassant-主题在-Hexo-上的移植版"><span class="toc-number">4.5.1.</span> <span class="toc-text">Maupassant 主题在 Hexo 上的移植版</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Material-瀑布流效果的-material-flow-主题"><span class="toc-number">4.5.2.</span> <span class="toc-text">Material 瀑布流效果的 material-flow 主题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一台电脑上配置多个-SSH"><span class="toc-number">5.</span> <span class="toc-text">一台电脑上配置多个 SSH</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#生成新的-SSH"><span class="toc-number">5.1.</span> <span class="toc-text">生成新的 SSH</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#将新的-SSH-秘钥添加到-SSH-代理中，以使你的电脑可以识别它："><span class="toc-number">5.2.</span> <span class="toc-text">将新的 SSH 秘钥添加到 SSH 代理中，以使你的电脑可以识别它：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置管理你的多个-SSH-秘钥"><span class="toc-number">5.3.</span> <span class="toc-text">配置管理你的多个 SSH 秘钥</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关联-Github-账号"><span class="toc-number">5.4.</span> <span class="toc-text">关联 Github 账号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改-Hexo-配置"><span class="toc-number">5.5.</span> <span class="toc-text">修改 Hexo 配置</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">6.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#参考资料"><span class="toc-number">6.0.1.</span> <span class="toc-text">参考资料</span></a></li></ol></li></ol></li></ol></div></div><div class="post-content"><blockquote>
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Li Kehui</title>
+  <subtitle>Good good study, day day up!</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://likehui.github.io/"/>
+  <updated>2017-03-20T14:21:05.000Z</updated>
+  <id>https://likehui.github.io/</id>
+  
+  <author>
+    <name>Kehui Li</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Test Formula</title>
+    <link href="https://likehui.github.io/2017/03/16/Test-Formula/"/>
+    <id>https://likehui.github.io/2017/03/16/Test-Formula/</id>
+    <published>2017-03-16T03:01:36.000Z</published>
+    <updated>2017-03-20T14:21:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>据说公式只有本地能显示，部署到 Github 上就不行了，来测试一下~</p>
+<p>$$<br>E = mc^2<br>$$</p>
+<a id="more"></a>
+<p>结论：</p>
+<ol>
+<li>和所选则的 theme 有关，我的 maupassant 主题就可以，material-flow 则不行。不过理论上增加几个 js 文件应该也就支持了；</li>
+<li>本地和 Github 部署后公式都可用；</li>
+<li>存在一个问题，显示在首页博客列表里的公式没有正确显示，但是点击博客打开后，正文里是正确显示的，估计要针对处理 <code>&lt;!-- more --&gt;</code> 之前文字的代码优化一下。</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;据说公式只有本地能显示，部署到 Github 上就不行了，来测试一下~&lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;E = mc^2&lt;br&gt;$$&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="How To" scheme="https://likehui.github.io/categories/How-To/"/>
+    
+      <category term="Hexo" scheme="https://likehui.github.io/categories/How-To/Hexo/"/>
+    
+      <category term="Mathjax" scheme="https://likehui.github.io/categories/How-To/Hexo/Mathjax/"/>
+    
+    
+      <category term="Github" scheme="https://likehui.github.io/tags/Github/"/>
+    
+      <category term="Hexo" scheme="https://likehui.github.io/tags/Hexo/"/>
+    
+      <category term="Blog" scheme="https://likehui.github.io/tags/Blog/"/>
+    
+      <category term="Mathjax" scheme="https://likehui.github.io/tags/Mathjax/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用 Github 和 Hexo 快速搭建个人博客</title>
+    <link href="https://likehui.github.io/2017/03/09/%E4%BD%BF%E7%94%A8%20Github%20%E5%92%8C%20Hexo%20%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://likehui.github.io/2017/03/09/使用 Github 和 Hexo 快速搭建个人博客/</id>
+    <published>2017-03-09T07:48:56.000Z</published>
+    <updated>2017-03-23T15:06:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
 <p>个人兴趣爱好特别广泛，喜欢捣鼓各种小东西自娱自乐。虽然都没能深入研究，但是自己的“孩子”还是很想拿出来遛遛得人一句夸奖的。所以刚学 Markdown 的时候很是有想过要搭个个人博客来玩玩，一来激励自己练习 Markdown，二来也是展示一下自己的“劳动成果”。可惜第一次尝试 Github + Jeckyll 的搭配没能一次成功，忙起来了也就把这事儿放一边了。最近因为微信普通公众号不支持页面内插入多个链接（想做个集合贴链接到自己的不同作品），就又想着还是自己搭个网站吧~改变策略使用 Github + Hexo 倒是很快成功了，记录一下过程，如果能对其他想要搭建个人博客网站的小伙伴有帮助那就更好了。</p>
 </blockquote>
 <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>Hexo 的官方文档挑重要的部分扫了一下，主要还是参考网上的一些帖子依样画的葫芦，遇到问题再去 Google 和度娘上找答案。问题也都不难解决，主要还是配置的问题，分享出来只是希望后来者可以少走点弯路。<br>首先说一下，<a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是一款基于 Node.js 的静态博客框架，支持 Markdown，符合大家需求的话就请听我慢慢道来。<br>我使用的是办公用的 Mac 来搭建的，本地的操作基本是用 Terminal 来完成的。其它操作系统应该类似，不过因为没验证尝试过也就不在这里谈到了。<br>我一共搭了两个博客，使用了不同的主题，一个比较简洁的，适合程序员发布技术贴；另一个是漂亮的 material design 风瀑布流，可以用来发布一些生活化的动态。因为 lz 有较为严重的整理癖，所以挑选的两个模板都有分类和 Tag 功能；同时也很想与同好们多多交流，并听听大家的反馈，所以找的都是有评论功能的主题（不过后一个的 disqus 第三方评论插件国内被墙啦~）。如果想要更简洁的、功能更强大的或者其他风格的模板，大家可以自行去 Hexo 的<a href="https://hexo.io/themes/" target="_blank" rel="external">主题列表</a>里挑选。</p>
@@ -208,13 +274,53 @@
 <p>如果你还有其他 Github 账号，则可以重复上述步骤来继续添加。</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>我搭建过程中遇到的各种情况基本都在前文讲述了，剩下的大家就自由发挥吧~</p>
 <h4 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a><em>参考资料</em></h4><p>[1] 代码咖啡. <a href="http://www.jianshu.com/p/e99ed60390a8" target="_blank" rel="external">20 分钟教你使用 hexo 搭建 github 博客</a>，10/2016<br>[2] Jamie Paton. <a href="http://jdpaton.github.io/2012/11/05/setup-hexo/" target="_blank" rel="external">Setting up a Github Pages blog with Hexo</a>，Nov. 2012<br>[3] 潘柏信. <a href="http://www.jianshu.com/p/465830080ea9" target="_blank" rel="external">HEXO + Github，搭建属于自己的博客</a>，08/2015<br>[4] 小道博客. <a href="http://oyjt.github.io/2016/01/16/hexo%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%8D%A2%E4%B8%BB%E9%A2%98/?utm_source=tuicool&amp;utm_medium=referral" target="_blank" rel="external">hexo 博客更换主题</a>，01/2016<br>[5] 屠夫9441. <a href="https://www.haomwei.com/technology/maupassant-hexo.html" target="_blank" rel="external">大道至简—— Hexo 简洁主题推荐</a>，11/2015<br>[6] Bryanyzhu. <a href="http://bryanyzhu.github.io/2015/12/17/all_about_hexo_IV/" target="_blank" rel="external">All about Hexo (4) - Publish Your Multiple Hexo Blogs with Multiple Github Accounts in One Computer</a>，Dec. 2015</p>
-</div><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a data-url="https://likehui.github.io/2017/03/09/使用 Github 和 Hexo 快速搭建个人博客/" data-id="cj0mj7z230001fnkcf88x0d3h" class="article-share-link">分享到</a><div class="tags"><a href="/tags/Github/">Github</a><a href="/tags/Hexo/">Hexo</a><a href="/tags/Blog/">Blog</a></div><div class="post-nav"><a href="/2017/03/16/Test-Formula/" class="pre">Test Formula</a><a href="/2017/03/08/hello-world/" class="next">Hello World</a></div><div data-thread-key="2017/03/09/使用 Github 和 Hexo 快速搭建个人博客/" data-title="使用 Github 和 Hexo 快速搭建个人博客" data-url="https://likehui.github.io/2017/03/09/使用 Github 和 Hexo 快速搭建个人博客/" class="ds-share flat"><div class="ds-share-inline"><ul class="ds-share-icons-16"><li data-toggle="ds-share-icons-more"><a href="javascript:void(0);" class="ds-more">分享到：</a></li><li><a href="javascript:void(0);" data-service="weibo" class="ds-weibo">微博</a></li><li><a href="javascript:void(0);" data-service="qzone" class="ds-qzone">QQ空间</a></li><li><a href="javascript:void(0);" data-service="qqt" class="ds-qqt">腾讯微博</a></li><li><a href="javascript:void(0);" data-service="wechat" class="ds-wechat">微信</a></li></ul><div class="ds-share-icons-more"></div></div></div><div data-thread-key="2017/03/09/使用 Github 和 Hexo 快速搭建个人博客/" data-title="使用 Github 和 Hexo 快速搭建个人博客" data-url="https://likehui.github.io/2017/03/09/使用 Github 和 Hexo 快速搭建个人博客/" data-author-key="1" class="ds-thread"></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" class="search-form"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://likehui.github.io"/></form></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/How-To/">How To</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/How-To/Hexo/">Hexo</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/How-To/Hexo/Mathjax/">Mathjax</a></li></ul></li></ul></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Github/" style="font-size: 15px;">Github</a> <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Blog/" style="font-size: 15px;">Blog</a> <a href="/tags/Mathjax/" style="font-size: 15px;">Mathjax</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/16/Test-Formula/">Test Formula</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/09/使用 Github 和 Hexo 快速搭建个人博客/">使用 Github 和 Hexo 快速搭建个人博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/08/hello-world/">Hello World</a></li></ul></div><div class="widget"><div class="comments-title"><i class="fa fa-comment-o"> 最近评论</i></div><div data-num-items="5" data-show-avatars="0" data-show-time="1" data-show-admin="0" data-excerpt-length="32" data-show-title="1" class="ds-recent-comments"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="http://hukai.me/" title="胡凯" target="_blank">胡凯</a><ul></ul><a href="https://vickymouse.github.io" title="Mouse Hole" target="_blank">Mouse Hole</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">© <a href="/." rel="nofollow">Li Kehui.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css?v=0.0.0"><script>var duoshuoQuery = {short_name:'likehui'};
-(function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0]
-        || document.getElementsByTagName('body')[0]).appendChild(ds);
-})();
-</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;个人兴趣爱好特别广泛，喜欢捣鼓各种小东西自娱自乐。虽然都没能深入研究，但是自己的“孩子”还是很想拿出来遛遛得人一句夸奖的。所以刚学 Markdown 的时候很是有想过要搭个个人博客来玩玩，一来激励自己练习 Markdown，二来也是展示一下自己的“
+    
+    </summary>
+    
+      <category term="How To" scheme="https://likehui.github.io/categories/How-To/"/>
+    
+      <category term="Hexo" scheme="https://likehui.github.io/categories/How-To/Hexo/"/>
+    
+    
+      <category term="Github" scheme="https://likehui.github.io/tags/Github/"/>
+    
+      <category term="Hexo" scheme="https://likehui.github.io/tags/Hexo/"/>
+    
+      <category term="Blog" scheme="https://likehui.github.io/tags/Blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://likehui.github.io/2017/03/08/hello-world/"/>
+    <id>https://likehui.github.io/2017/03/08/hello-world/</id>
+    <published>2017-03-08T06:21:00.000Z</published>
+    <updated>2017-03-08T06:21:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
